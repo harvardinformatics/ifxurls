@@ -22,7 +22,7 @@ def getIfxUrl(name):
     Currently, just a hash.  Exception is raised for urls that are not defined.
     '''
     urls = {
-        'NANITES_BY_LOGIN': '/'.join([NANITES_API_BASE, 'nanites/'])
+        'NANITES_BY_LOGIN': '/'.join([NANITES_API_BASE, 'people/'])
     }
 
     try:
