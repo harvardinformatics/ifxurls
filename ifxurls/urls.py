@@ -14,6 +14,7 @@ import sys
 
 
 NANITES_API_BASE = os.environ.get('NANITES_API_BASE', 'https://nanites.rc.fas.harvard.edu/nanites/api').rstrip('/')
+IFXMAIL_API_BASE = os.environ.get('IFXMAIL_API_BASE', 'https://ifxmail.rc.fas.harvard.edu/ifxmail/api').rstrip('/')
 
 
 def getIfxUrl(name):
@@ -22,7 +23,8 @@ def getIfxUrl(name):
     Currently, just a hash.  Exception is raised for urls that are not defined.
     '''
     urls = {
-        'NANITES_BY_LOGIN': '/'.join([NANITES_API_BASE, 'people/'])
+        'NANITES_BY_LOGIN': '/'.join([NANITES_API_BASE, 'people/']),
+        'IFXMAIL_POST_MAILING': '/'.join([IFXMAIL_API_BASE, 'mailings/']),
     }
 
     try:
