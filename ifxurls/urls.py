@@ -25,6 +25,7 @@ def getIfxUrl(name):
     urls = {
         'NANITES_BY_LOGIN': '/'.join([NANITES_API_BASE, 'people/']),
         'IFXMAIL_POST_MAILING': '/'.join([IFXMAIL_API_BASE, 'mailings/']),
+        'NANITE_LOGIN': '/'.join([NANITES_API_BASE, 'logins/'])
     }
 
     try:
