@@ -10,12 +10,14 @@ Created on  2018-12-23
 All rights reserved.
 @license: GPL v2.0
 '''
-import os
 import unittest
 from ifxurls import getIfxUrl
 
-class TestAddress(unittest.TestCase):
 
+class TestAddress(unittest.TestCase):
+    '''
+    Test address
+    '''
     def testBadUrl(self):
         '''
         Request a Url that doesn't exist and get an Exception

@@ -25,7 +25,9 @@ def getIfxUrl(name):
     urls = {
         'NANITES_BY_LOGIN': '/'.join([NANITES_API_BASE, 'people/']),
         'IFXMAIL_POST_MAILING': '/'.join([IFXMAIL_API_BASE, 'mailings/']),
-        'NANITE_LOGIN': '/'.join([NANITES_API_BASE, 'logins/'])
+        'NANITE_LOGIN': '/'.join([NANITES_API_BASE, 'logins/']),
+        'NANITES_POST_LOGIN': '/'.join([NANITES_API_BASE, 'logins/']),
+        'NANITES_POST_PERSON': '/'.join([NANITES_API_BASE, 'people/']),
     }
 
     try:
@@ -35,7 +37,11 @@ def getIfxUrl(name):
 
 
 def main():
-    help = '''
+    '''
+    For use with command line fetch of URL
+    '''
+
+    helpstr = '''
     getIfxUrl <urlname>
 
     Return an Ifx url by name (e.g. NANITES_BY_LOGIN)
@@ -47,7 +53,7 @@ def main():
 '''
 
     if len(sys.argv) < 2:
-        sys.stderr.write(help + '\n')
+        sys.stderr.write(helpstr + '\n')
         return 0
 
     try:
