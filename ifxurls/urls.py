@@ -28,6 +28,8 @@ def getIfxUrl(name):
         'NANITE_LOGIN': '/'.join([NANITES_API_BASE, 'logins/']),
         'NANITES_POST_LOGIN': '/'.join([NANITES_API_BASE, 'logins/']),
         'NANITES_POST_PERSON': '/'.join([NANITES_API_BASE, 'people/']),
+        'NANITES_PEOPLE': '/'.join([NANITES_API_BASE, 'people/']),
+        'NANITES_LOGINS': '/'.join([NANITES_API_BASE, 'logins/']),
     }
 
     try:
