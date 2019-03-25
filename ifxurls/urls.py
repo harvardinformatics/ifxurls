@@ -15,6 +15,7 @@ import sys
 
 NANITES_API_BASE = os.environ.get('NANITES_API_BASE', 'https://nanites.rc.fas.harvard.edu/nanites/api').rstrip('/')
 IFXMAIL_API_BASE = os.environ.get('IFXMAIL_API_BASE', 'https://ifxmail.rc.fas.harvard.edu/ifxmail/api').rstrip('/')
+CNS_WORDPRESS_API_BASE = os.environ.get('CNS_WORDPRESS_API_BASE', 'https://cns1.rc.fas.harvard.edu/wp-json/wp/v2').rstrip('/')
 
 
 def getIfxUrl(name):
@@ -30,6 +31,7 @@ def getIfxUrl(name):
         'NANITES_POST_PERSON': '/'.join([NANITES_API_BASE, 'people/']),
         'NANITES_PEOPLE': '/'.join([NANITES_API_BASE, 'people/']),
         'NANITES_LOGINS': '/'.join([NANITES_API_BASE, 'logins/']),
+        'CNS_WORDPRESS_TOOL_LISTING': '/'.join([CNS_WORDPRESS_API_BASE, 'tool/']),
     }
 
     try:
