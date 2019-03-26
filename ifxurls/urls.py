@@ -32,6 +32,7 @@ def getIfxUrl(name):
         'NANITES_PEOPLE': '/'.join([NANITES_API_BASE, 'people/']),
         'NANITES_LOGINS': '/'.join([NANITES_API_BASE, 'logins/']),
         'CNS_WORDPRESS_TOOL_LISTING': '/'.join([CNS_WORDPRESS_API_BASE, 'tool/']),
+        'CNS_WORDPRESS_TOKEN': '/'.join([CNS_WORDPRESS_API_BASE, 'token/']),
     }
 
     try:
