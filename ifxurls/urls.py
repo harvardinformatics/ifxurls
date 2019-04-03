@@ -16,6 +16,7 @@ import sys
 NANITES_API_BASE = os.environ.get('NANITES_API_BASE', 'https://nanites.rc.fas.harvard.edu/nanites/api').rstrip('/')
 IFXMAIL_API_BASE = os.environ.get('IFXMAIL_API_BASE', 'https://ifxmail.rc.fas.harvard.edu/ifxmail/api').rstrip('/')
 CNS_WORDPRESS_API_BASE = os.environ.get('CNS_WORDPRESS_API_BASE', 'https://cns1.rc.fas.harvard.edu/wp-json/wp/v2').rstrip('/')
+CNS_INTRANET_API_BASE = os.environ.get('CNS_INTRANET_API_BASE', 'https://cns1.rc.fas.harvard.edu').rstrip('/')
 
 
 def getIfxUrl(name):
@@ -33,6 +34,7 @@ def getIfxUrl(name):
         'NANITES_LOGINS': '/'.join([NANITES_API_BASE, 'logins/']),
         'CNS_WORDPRESS_TOOL_LISTING': '/'.join([CNS_WORDPRESS_API_BASE, 'tool/']),
         'CNS_WORDPRESS_TOKEN': '/'.join([CNS_WORDPRESS_API_BASE, 'token/']),
+        'CNS_INTRANET_POST_TOOL': '/.join([CNS_INTRANET_API_BASE, 'apps/nice/update_tool.php']),
     }
 
     try:
