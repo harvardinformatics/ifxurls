@@ -7,7 +7,9 @@ At some future date this may be more dynamic :)
 
 You can set "base" API URLs via environment variables if you want, e.g.
 
-export NANITES_API_BASE='http://localhost:9876/nanites/api'
+    $ export NANITES_API_BASE='http://localhost:9876/nanites/api'
+    $ getIfxUrl NANITES_PEOPLE
+    http://localhost:9876/nanites/api/people/
 
 Current urls include:
 
