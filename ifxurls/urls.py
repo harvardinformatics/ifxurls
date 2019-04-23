@@ -37,6 +37,12 @@ def getIfxUrl(name):
         'CNS_INTRANET_POST_TOOL': '/'.join([CNS_INTRANET_API_BASE, 'apps/nice/update_tool.php']),
     }
 
+    if name == '-a':
+        lines = ['']
+        for key in sorted(urls.keys()):
+            lines.append('    {key:30} {val}'.format(key=key, val=urls[key]))
+        lines.append('')
+        return '\n'.join(lines)
     try:
         return urls[name]
     except KeyError:
@@ -57,6 +63,9 @@ def main():
        $ export NANITES_API_BASE=http://localhost:9876
 
     Trailing slashes will be trimmed.
+
+    getIfxUrl -a will return all known urls
+
 '''
 
     if len(sys.argv) < 2:
