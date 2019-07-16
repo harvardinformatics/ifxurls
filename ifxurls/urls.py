@@ -32,6 +32,7 @@ def getIfxUrl(name):
         'NANITES_POST_PERSON': '/'.join([NANITES_API_BASE, 'people/']),
         'NANITES_PEOPLE': '/'.join([NANITES_API_BASE, 'people/']),
         'NANITES_LOGINS': '/'.join([NANITES_API_BASE, 'logins/']),
+        'NANITES_BASICS_BY_LOGIN': '/'.join([NANITES_API_BASE, 'basics-by-login/']),
         'CNS_WORDPRESS_TOOL_LISTING': '/'.join([CNS_WORDPRESS_API_BASE, 'wp/v2/tool/']),
         'CNS_WORDPRESS_MEDIA_LISTING': '/'.join([CNS_WORDPRESS_API_BASE, 'wp/v2/media/']),
         'CNS_WORDPRESS_TOKEN': '/'.join([CNS_WORDPRESS_API_BASE, 'jwt-auth/v1/token/']),
