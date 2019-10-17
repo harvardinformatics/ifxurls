@@ -30,6 +30,7 @@ API bases that can be altered (and their default values) include:
     IFXMAIL_API_BASE (https://ifxmail.rc.fas.harvard.edu/ifxmail/api)
     CNS_WORDPRESS_API_BASE (https://cns1.rc.fas.harvard.edu/wp-json)
     CNS_INTRANET_API_BASE (https://cns1.rc.fas.harvard.edu)
+    NICE_API_BASE (https://nice.rc.fas.harvard.edu/nice/api)
 
 
 Current urls:

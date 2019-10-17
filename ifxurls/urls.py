@@ -17,7 +17,8 @@ NANITES_API_BASE = os.environ.get('NANITES_API_BASE', 'https://nanites.rc.fas.ha
 IFXMAIL_API_BASE = os.environ.get('IFXMAIL_API_BASE', 'https://ifxmail.rc.fas.harvard.edu/ifxmail/api').rstrip('/')
 CNS_WORDPRESS_API_BASE = os.environ.get('CNS_WORDPRESS_API_BASE', 'https://cns1.rc.fas.harvard.edu/wp-json').rstrip('/')
 CNS_INTRANET_API_BASE = os.environ.get('CNS_INTRANET_API_BASE', 'https://cns1.rc.fas.harvard.edu').rstrip('/')
-
+NICE_API_BASE = os.environ.get('NICE_API_BASE', 'https://nice.rc.fas.harvard.edu/nice/api').rstrip('/')
+PUBS_API_BASE = os.environ.get('PUBS_API_BASE', 'https://ifx.rc.fas.harvard.edu/pubs/api').rstrip('/')
 
 def getIfxUrl(name):
     '''
@@ -39,6 +40,9 @@ def getIfxUrl(name):
         'CNS_WORDPRESS_MEDIA_LISTING': '/'.join([CNS_WORDPRESS_API_BASE, 'wp/v2/media/']),
         'CNS_WORDPRESS_TOKEN': '/'.join([CNS_WORDPRESS_API_BASE, 'jwt-auth/v1/token/']),
         'CNS_INTRANET_POST_TOOL': '/'.join([CNS_INTRANET_API_BASE, 'apps/nice/update_tool.php']),
+        'NANITES_API_BASE':  NANITES_API_BASE,
+        'NICE_API_BASE': NICE_API_BASE,
+        'PUBS_API_BASE': PUBS_API_BASE,
     }
 
     if name == '-a':
