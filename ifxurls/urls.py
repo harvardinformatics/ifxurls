@@ -19,6 +19,7 @@ CNS_WORDPRESS_API_BASE = os.environ.get('CNS_WORDPRESS_API_BASE', 'https://cns1.
 CNS_INTRANET_API_BASE = os.environ.get('CNS_INTRANET_API_BASE', 'https://cns1.rc.fas.harvard.edu').rstrip('/')
 NICE_API_BASE = os.environ.get('NICE_API_BASE', 'https://nice.rc.fas.harvard.edu/nice/api').rstrip('/')
 PUBS_API_BASE = os.environ.get('PUBS_API_BASE', 'https://ifx.rc.fas.harvard.edu/pubs/api').rstrip('/')
+IFXONBOARD_API_BASE = os.environ.get('IFXONBOARD_API_BASE', 'https://onboard.rc.fas.harvard.edu/onboard/api').rstrip('/')
 
 def getIfxUrl(name):
     '''
@@ -43,6 +44,7 @@ def getIfxUrl(name):
         'NANITES_API_BASE':  NANITES_API_BASE,
         'NICE_API_BASE': NICE_API_BASE,
         'PUBS_API_BASE': PUBS_API_BASE,
+        'IFXONBOARD_API_BASE': IFXONBOARD_API_BASE,
     }
 
     if name == '-a':
