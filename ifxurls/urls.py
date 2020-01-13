@@ -45,6 +45,7 @@ def getIfxUrl(name):
         'NICE_API_BASE': NICE_API_BASE,
         'PUBS_API_BASE': PUBS_API_BASE,
         'IFXONBOARD_API_BASE': IFXONBOARD_API_BASE,
+        'IFXONBOARD_POST_ONBOARD_REQUEST': '/'.join([IFXONBOARD_API_BASE, 'onboardrequests/']),
     }
 
     if name == '-a':
