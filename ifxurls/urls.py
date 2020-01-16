@@ -20,6 +20,7 @@ CNS_INTRANET_API_BASE = os.environ.get('CNS_INTRANET_API_BASE', 'https://cns1.rc
 NICE_API_BASE = os.environ.get('NICE_API_BASE', 'https://nice.rc.fas.harvard.edu/nice/api').rstrip('/')
 PUBS_API_BASE = os.environ.get('PUBS_API_BASE', 'https://ifx.rc.fas.harvard.edu/pubs/api').rstrip('/')
 IFXONBOARD_API_BASE = os.environ.get('IFXONBOARD_API_BASE', 'https://onboard.rc.fas.harvard.edu/onboard/api').rstrip('/')
+IFXONBOARD_URL_BASE = os.environ.get('IFXONBOARD_URL_BASE', 'https://onboard.rc.fas.harvard.edu/onboard').rstrip('/')
 
 def getIfxUrl(name):
     '''
@@ -45,6 +46,7 @@ def getIfxUrl(name):
         'NICE_API_BASE': NICE_API_BASE,
         'PUBS_API_BASE': PUBS_API_BASE,
         'IFXONBOARD_API_BASE': IFXONBOARD_API_BASE,
+        'IFXONBOARD_URL_BASE': IFXONBOARD_URL_BASE,
         'IFXONBOARD_POST_ONBOARD_REQUEST': '/'.join([IFXONBOARD_API_BASE, 'onboardrequests/']),
     }
 
