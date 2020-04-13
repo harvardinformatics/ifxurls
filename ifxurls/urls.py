@@ -18,7 +18,10 @@ IFXMAIL_API_BASE = os.environ.get('IFXMAIL_API_BASE', 'https://ifxmail.rc.fas.ha
 CNS_WORDPRESS_API_BASE = os.environ.get('CNS_WORDPRESS_API_BASE', 'https://cns1.rc.fas.harvard.edu/wp-json').rstrip('/')
 CNS_INTRANET_API_BASE = os.environ.get('CNS_INTRANET_API_BASE', 'https://cns1.rc.fas.harvard.edu').rstrip('/')
 NICE_API_BASE = os.environ.get('NICE_API_BASE', 'https://nice.rc.fas.harvard.edu/nice/api').rstrip('/')
+NICE_URL_BASE = os.environ.get('NICE_URL_BASE', 'https://nice.rc.fas.harvard.edu/nice').rstrip('/')
 PUBS_API_BASE = os.environ.get('PUBS_API_BASE', 'https://ifx.rc.fas.harvard.edu/pubs/api').rstrip('/')
+IFXONBOARD_API_BASE = os.environ.get('IFXONBOARD_API_BASE', 'https://onboard.rc.fas.harvard.edu/onboard/api').rstrip('/')
+IFXONBOARD_URL_BASE = os.environ.get('IFXONBOARD_URL_BASE', 'https://onboard.rc.fas.harvard.edu/onboard').rstrip('/')
 
 def getIfxUrl(name):
     '''
@@ -44,7 +47,12 @@ def getIfxUrl(name):
         'CNS_INTRANET_POST_NNIN_ADMIN': '/'.join([CNS_INTRANET_API_BASE, 'apps/nice/update_nnin_admin.php']),
         'NANITES_API_BASE':  NANITES_API_BASE,
         'NICE_API_BASE': NICE_API_BASE,
+        'NICE_URL_BASE': NICE_URL_BASE,
         'PUBS_API_BASE': PUBS_API_BASE,
+        'IFXONBOARD_API_BASE': IFXONBOARD_API_BASE,
+        'IFXONBOARD_URL_BASE': IFXONBOARD_URL_BASE,
+        'IFXONBOARD_POST_ONBOARD_REQUEST': '/'.join([IFXONBOARD_API_BASE, 'onboardrequests/']),
+        'NICE_ACCOUNT_REQUEST_LISTING': '/'.join([NICE_URL_BASE, 'requests', 'account/'])
     }
 
     if name == '-a':
