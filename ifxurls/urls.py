@@ -41,6 +41,7 @@ def getIfxUrl(name):
         'NANITES_PI_NAMES': '/'.join([NANITES_API_BASE, 'get-pi-names/']),
         'CNS_WORDPRESS_TOOL_LISTING': '/'.join([CNS_WORDPRESS_API_BASE, 'wp/v2/tool/']),
         'CNS_WORDPRESS_MEDIA_LISTING': '/'.join([CNS_WORDPRESS_API_BASE, 'wp/v2/media/']),
+        'CNS_WORDPRESS_STAFF_LISTING': '/'.join([CNS_WORDPRESS_API_BASE, 'wp/v2/staff/']),
         'CNS_WORDPRESS_TOKEN': '/'.join([CNS_WORDPRESS_API_BASE, 'jwt-auth/v1/token/']),
         'CNS_INTRANET_POST_TOOL': '/'.join([CNS_INTRANET_API_BASE, 'apps/nice/update_tool.php']),
         'CNS_INTRANET_POST_CNS_STAFF': '/'.join([CNS_INTRANET_API_BASE, 'apps/nice/update_cns_staff.php']),
