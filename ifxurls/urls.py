@@ -46,6 +46,7 @@ def getIfxUrl(name):
         'CNS_INTRANET_POST_TOOL': '/'.join([CNS_INTRANET_API_BASE, 'apps/nice/update_tool.php']),
         'CNS_INTRANET_POST_CNS_STAFF': '/'.join([CNS_INTRANET_API_BASE, 'apps/nice/update_cns_staff.php']),
         'CNS_INTRANET_POST_NNIN_ADMIN': '/'.join([CNS_INTRANET_API_BASE, 'apps/nice/update_nnin_admin.php']),
+        'CNS_INTRANET_CHECK_NNIN_ADMIN_USERNAME': '/'.join([CNS_INTRANET_API_BASE, 'apps/nice/check_nnin_admin_username.php']),
         'NANITES_API_BASE':  NANITES_API_BASE,
         'NICE_API_BASE': NICE_API_BASE,
         'NICE_URL_BASE': NICE_URL_BASE,
