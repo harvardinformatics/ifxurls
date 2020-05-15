@@ -22,6 +22,7 @@ NICE_URL_BASE = os.environ.get('NICE_URL_BASE', 'https://nice.rc.fas.harvard.edu
 PUBS_API_BASE = os.environ.get('PUBS_API_BASE', 'https://ifx.rc.fas.harvard.edu/pubs/api').rstrip('/')
 IFXONBOARD_API_BASE = os.environ.get('IFXONBOARD_API_BASE', 'https://onboard.rc.fas.harvard.edu/onboard/api').rstrip('/')
 IFXONBOARD_URL_BASE = os.environ.get('IFXONBOARD_URL_BASE', 'https://onboard.rc.fas.harvard.edu/onboard').rstrip('/')
+P3_URL_BASE = os.environ.get('P3_URL_BASE', 'https://portal.rc.fas.harvard.edu/p3').rstrip('/')
 
 def getIfxUrl(name):
     '''
@@ -54,7 +55,8 @@ def getIfxUrl(name):
         'IFXONBOARD_API_BASE': IFXONBOARD_API_BASE,
         'IFXONBOARD_URL_BASE': IFXONBOARD_URL_BASE,
         'IFXONBOARD_POST_ONBOARD_REQUEST': '/'.join([IFXONBOARD_API_BASE, 'onboardrequests/']),
-        'NICE_ACCOUNT_REQUEST_LISTING': '/'.join([NICE_URL_BASE, 'requests', 'account/'])
+        'NICE_ACCOUNT_REQUEST_LISTING': '/'.join([NICE_URL_BASE, 'requests', 'account/']),
+        'P3_PASSWORD_RESET': '/'.join([P3_URL_BASE, 'pwreset/']),
     }
 
     if name == '-a':
