@@ -59,6 +59,7 @@ def getIfxUrl(name):
         'NICE_ACCOUNT_REQUEST_LISTING': '/'.join([NICE_URL_BASE, 'requests', 'account/']),
         'P3_PASSWORD_RESET': '/'.join([P3_URL_BASE, 'pwreset/']),
         'PORTAL_APPROVALS': '/'.join([PORTAL_URL_BASE, 'request', 'approvals']),
+        'PORTAL_REQUEST': '/'.join([PORTAL_URL_BASE, 'request', 'getrequest']),
     }
 
     if name == '-a':
