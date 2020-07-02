@@ -62,7 +62,8 @@ def getIfxUrl(name):
         'PORTAL_APPROVALS': '/'.join([PORTAL_URL_BASE, 'request', 'approvals']),
         'PORTAL_REQUEST': '/'.join([PORTAL_URL_BASE, 'request', 'getrequest']),
         'P3_API_BASE': P3_API_BASE,
-        'P3_ACCOUNT_REQUEST_LISTING': '/'.join([P3_API_BASE, 'requests', 'account/']),
+        'P3_ACCOUNT_REQUEST_LISTING': '/'.join([P3_URL_BASE, 'requests', 'account/']),
+        'P3_ACCOUNT_REQUEST_UPDATE': '/'.join([P3_API_BASE, 'requests', 'account-request/']),
     }
 
     if name == '-a':
