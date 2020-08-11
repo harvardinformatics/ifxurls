@@ -25,8 +25,8 @@ IFXONBOARD_URL_BASE = os.environ.get('IFXONBOARD_URL_BASE', 'https://onboard.rc.
 P3_URL_BASE = os.environ.get('P3_URL_BASE', 'https://portal.rc.fas.harvard.edu/p3').rstrip('/')
 P3_API_BASE = os.environ.get('P3_API_BASE', 'https://portal.rc.fas.harvard.edu/p3/api').rstrip('/')
 PORTAL_URL_BASE = os.environ.get('PORTAL_URL_BASE', 'https://portal.rc.fas.harvard.edu').rstrip('/')
-P3APPROVE_API_BASE = os.environ.get('P3_APPROVE_API_BASE', 'https://ifx.rc.fas.harvard.edu/p3approve/api').rstrip('/')
-P3APPROVE_URL_BASE = os.environ.get('P3_APPROVE_URL_BASE', 'https://ifx.rc.fas.harvard.edu/p3approve').rstrip('/')
+P3APPROVE_API_BASE = os.environ.get('P3APPROVE_API_BASE', 'https://ifx.rc.fas.harvard.edu/p3approve/api').rstrip('/')
+P3APPROVE_URL_BASE = os.environ.get('P3APPROVE_URL_BASE', 'https://ifx.rc.fas.harvard.edu/p3approve').rstrip('/')
 
 def getIfxUrl(name):
     '''
