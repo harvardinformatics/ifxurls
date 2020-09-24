@@ -27,6 +27,8 @@ P3_API_BASE = os.environ.get('P3_API_BASE', 'https://portal.rc.fas.harvard.edu/p
 PORTAL_URL_BASE = os.environ.get('PORTAL_URL_BASE', 'https://portal.rc.fas.harvard.edu').rstrip('/')
 P3APPROVE_API_BASE = os.environ.get('P3APPROVE_API_BASE', 'https://ifx.rc.fas.harvard.edu/p3approve/api').rstrip('/')
 P3APPROVE_URL_BASE = os.environ.get('P3APPROVE_URL_BASE', 'https://ifx.rc.fas.harvard.edu/p3approve').rstrip('/')
+HERS_API_BASE = os.environ.get('HERS_API_BASE', 'https://hers.rc.fas.harvard.edu/hers/api').rstrip('/')
+HERS_URL_BASE = os.environ.get('HERS_URL_BASE', 'https://hers.rc.fas.harvard.edu/hers').rstrip('/')
 
 def getIfxUrl(name):
     '''
@@ -68,6 +70,9 @@ def getIfxUrl(name):
         'P3_ACCOUNT_REQUEST_UPDATE': '/'.join([P3_API_BASE, 'requests', 'account-request/']),
         'P3APPROVE_IFXUSER_UPDATE_USERS': '/'.join([P3APPROVE_API_BASE, 'ifxuser', 'update-users/']),
         'P3APPROVE_URL_BASE': P3APPROVE_URL_BASE,
+        'HERS_API_BASE': HERS_API_BASE,
+        'HERS_ACCOUNT_REQUEST_LISTING': '/'.join([HERS_URL_BASE, 'requests', 'account/']),
+        'HERS_ACCOUNT_REQUEST_UPDATE': '/'.join([HERS_API_BASE, 'requests', 'account-request/']),
     }
 
     if name == '-a':
