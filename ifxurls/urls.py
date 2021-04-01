@@ -71,7 +71,7 @@ def getIfxUrl(name):
         'P3APPROVE_IFXUSER_UPDATE_USERS': '/'.join([P3APPROVE_API_BASE, 'ifxuser', 'update-users/']),
         'P3APPROVE_URL_BASE': P3APPROVE_URL_BASE,
         'HERS_API_BASE': HERS_API_BASE,
-        'HERS_ACCOUNT_REQUEST_LISTING': '/'.join([HERS_URL_BASE, 'requests', 'account/']),
+        'HERS_ACCOUNT_REQUEST_LISTING': '/'.join([HERS_URL_BASE, 'requests', 'account_request/']),
         'HERS_ACCOUNT_REQUEST_UPDATE': '/'.join([HERS_API_BASE, 'requests', 'account-request/']),
     }
 
