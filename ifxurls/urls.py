@@ -29,6 +29,8 @@ P3APPROVE_API_BASE = os.environ.get('P3APPROVE_API_BASE', 'https://ifx.rc.fas.ha
 P3APPROVE_URL_BASE = os.environ.get('P3APPROVE_URL_BASE', 'https://ifx.rc.fas.harvard.edu/p3approve').rstrip('/')
 HERS_API_BASE = os.environ.get('HERS_API_BASE', 'https://hers.rc.fas.harvard.edu/hers/api').rstrip('/')
 HERS_URL_BASE = os.environ.get('HERS_URL_BASE', 'https://hers.rc.fas.harvard.edu/hers').rstrip('/')
+FIINE_API_BASE = os.environ.get('FIINE_API_BASE', 'https://fiine.rc.fas.harvard.edu/fiine/api').rstrip('/')
+FIINE_URL_BASE = os.environ.get('FIINE_URL_BASE', 'https://fiine.rc.fas.harvard.edu/fiine').rstrip('/')
 
 def getIfxUrl(name):
     '''
@@ -73,6 +75,9 @@ def getIfxUrl(name):
         'HERS_API_BASE': HERS_API_BASE,
         'HERS_ACCOUNT_REQUEST_LISTING': '/'.join([HERS_URL_BASE, 'requests', 'account_request/']),
         'HERS_ACCOUNT_REQUEST_UPDATE': '/'.join([HERS_API_BASE, 'requests', 'account-request/']),
+        'FIINE_API_BASE': FIINE_API_BASE,
+        'FIINE_ACCOUNT_REQUEST_LISTING': '/'.join([FIINE_URL_BASE, 'requests', 'account_request/']),
+        'FIINE_ACCOUNT_REQUEST_UPDATE': '/'.join([FIINE_API_BASE, 'requests', 'account-request/']),
     }
 
     if name == '-a':
