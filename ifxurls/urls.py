@@ -74,6 +74,7 @@ def getIfxUrl(name):
         'P3APPROVE_URL_BASE': P3APPROVE_URL_BASE,
         'HERS_API_BASE': HERS_API_BASE,
         'HERS_ACCOUNT_REQUEST_LISTING': '/'.join([HERS_URL_BASE, 'requests', 'account_request/']),
+        'HERS_BILLING_RECORD_LISTING': '/'.join([HERS_URL_BASE, 'billing-records/']),
         'HERS_ACCOUNT_REQUEST_UPDATE': '/'.join([HERS_API_BASE, 'requests', 'account-request/']),
         'FIINE_API_BASE': FIINE_API_BASE,
         'FIINE_ACCOUNT_REQUEST_LISTING': '/'.join([FIINE_URL_BASE, 'requests', 'account_request/']),
