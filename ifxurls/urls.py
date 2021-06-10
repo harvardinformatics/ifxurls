@@ -31,6 +31,8 @@ HERS_API_BASE = os.environ.get('HERS_API_BASE', 'https://hers.rc.fas.harvard.edu
 HERS_URL_BASE = os.environ.get('HERS_URL_BASE', 'https://hers.rc.fas.harvard.edu/hers').rstrip('/')
 FIINE_API_BASE = os.environ.get('FIINE_API_BASE', 'https://fiine.rc.fas.harvard.edu/fiine/api').rstrip('/')
 FIINE_URL_BASE = os.environ.get('FIINE_URL_BASE', 'https://fiine.rc.fas.harvard.edu/fiine').rstrip('/')
+COLDFRONT_API_BASE = os.environ.get('COLDFRONT_API_BASE', 'http://coldfront.rc.fas.harvard.edu:9000/api').rstrip('/')
+COLDFRONT_URL_BASE = os.environ.get('COLDFRONT_URL_BASE', 'http://coldfront.rc.fas.harvard.edu:9000').rstrip('/')
 
 def getIfxUrl(name):
     '''
@@ -79,6 +81,8 @@ def getIfxUrl(name):
         'FIINE_API_BASE': FIINE_API_BASE,
         'FIINE_ACCOUNT_REQUEST_LISTING': '/'.join([FIINE_URL_BASE, 'requests', 'account_request/']),
         'FIINE_ACCOUNT_REQUEST_UPDATE': '/'.join([FIINE_API_BASE, 'requests', 'account-request/']),
+        'COLDFRONT_API_BASE': COLDFRONT_API_BASE,
+        'COLDFRONT_BILLING_RECORD_LISTING': '/'.join([COLDFRONT_API_BASE, 'billing-records/']),
     }
 
     if name == '-a':
