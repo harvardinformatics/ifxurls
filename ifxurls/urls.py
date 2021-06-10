@@ -31,7 +31,7 @@ HERS_API_BASE = os.environ.get('HERS_API_BASE', 'https://hers.rc.fas.harvard.edu
 HERS_URL_BASE = os.environ.get('HERS_URL_BASE', 'https://hers.rc.fas.harvard.edu/hers').rstrip('/')
 FIINE_API_BASE = os.environ.get('FIINE_API_BASE', 'https://fiine.rc.fas.harvard.edu/fiine/api').rstrip('/')
 FIINE_URL_BASE = os.environ.get('FIINE_URL_BASE', 'https://fiine.rc.fas.harvard.edu/fiine').rstrip('/')
-COLDFRONT_API_BASE = os.environ.get('COLDFRONT_API_BASE', 'http://coldfront.rc.fas.harvard.edu:9000/api').rstrip('/')
+COLDFRONT_API_BASE = os.environ.get('COLDFRONT_API_BASE', 'http://coldfront.rc.fas.harvard.edu:9000/ifx/api').rstrip('/')
 COLDFRONT_URL_BASE = os.environ.get('COLDFRONT_URL_BASE', 'http://coldfront.rc.fas.harvard.edu:9000').rstrip('/')
 
 def getIfxUrl(name):
