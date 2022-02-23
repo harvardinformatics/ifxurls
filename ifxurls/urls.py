@@ -89,6 +89,7 @@ def getIfxUrl(name):
         'CBSI_API_BASE': CBSI_API_BASE,
         'CBSI_ACCOUNT_REQUEST_LISTING': '/'.join([CBSI_URL_BASE, 'requests', 'account_request/']),
         'CBSI_ACCOUNT_REQUEST_UPDATE': '/'.join([CBSI_API_BASE, 'requests', 'account-request/']),
+        'CBSI_BILLING_RECORD_LISTING': '/'.join([CBSI_API_BASE, 'billing-records/']),
     }
 
     if name == '-a':
