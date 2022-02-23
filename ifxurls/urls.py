@@ -34,7 +34,7 @@ FIINE_URL_BASE = os.environ.get('FIINE_URL_BASE', 'https://fiine.rc.fas.harvard.
 COLDFRONT_API_BASE = os.environ.get('COLDFRONT_API_BASE', 'https://coldfront.rc.fas.harvard.edu/ifx/api').rstrip('/')
 COLDFRONT_URL_BASE = os.environ.get('COLDFRONT_URL_BASE', 'https://coldfront.rc.fas.harvard.edu').rstrip('/')
 CBSI_API_BASE = os.environ.get('CBSI_API_BASE', 'https://cbsi.rc.fas.harvard.edu/cbsi/api').rstrip('/')
-CBSI_URL_BASE = os.environ.get('CBSI_URL_BASE', 'https://cbsi.rc.fas.harvard.edu').rstrip('/')
+CBSI_URL_BASE = os.environ.get('CBSI_URL_BASE', 'https://cbsi.rc.fas.harvard.edu/cbsi').rstrip('/')
 
 def getIfxUrl(name):
     '''
@@ -87,6 +87,7 @@ def getIfxUrl(name):
         'COLDFRONT_API_BASE': COLDFRONT_API_BASE,
         'COLDFRONT_BILLING_RECORD_LISTING': '/'.join([COLDFRONT_API_BASE, 'billing-records/']),
         'CBSI_API_BASE': CBSI_API_BASE,
+        'CBSI_URL_BASE': CBSI_URL_BASE,
         'CBSI_ACCOUNT_REQUEST_LISTING': '/'.join([CBSI_URL_BASE, 'requests', 'account_request/']),
         'CBSI_ACCOUNT_REQUEST_UPDATE': '/'.join([CBSI_API_BASE, 'requests', 'account-request/']),
         'CBSI_BILLING_RECORD_LISTING': '/'.join([CBSI_API_BASE, 'billing-records/']),
