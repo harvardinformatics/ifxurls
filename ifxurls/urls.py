@@ -80,6 +80,7 @@ def getIfxUrl(name):
         'HERS_API_BASE': HERS_API_BASE,
         'HERS_ACCOUNT_REQUEST_LISTING': '/'.join([HERS_URL_BASE, 'requests', 'account_request/']),
         'HERS_BILLING_RECORD_LISTING': '/'.join([HERS_API_BASE, 'billing/get-billing-record-list/']),
+        'HERS_BILLING_RECORD_DETAIL_ROOT': '/'.join([HERS_API_BASE, 'billing-records/']),
         'HERS_ACCOUNT_REQUEST_UPDATE': '/'.join([HERS_API_BASE, 'requests', 'account-request/']),
         'FIINE_API_BASE': FIINE_API_BASE,
         'FIINE_ACCOUNT_REQUEST_LISTING': '/'.join([FIINE_URL_BASE, 'requests', 'account_request/']),
@@ -91,6 +92,7 @@ def getIfxUrl(name):
         'CBSN_ACCOUNT_REQUEST_LISTING': '/'.join([CBSN_URL_BASE, 'requests', 'account_request/']),
         'CBSN_ACCOUNT_REQUEST_UPDATE': '/'.join([CBSN_API_BASE, 'requests', 'account-request/']),
         'CBSN_BILLING_RECORD_LISTING': '/'.join([CBSN_API_BASE, 'billing/get-billing-record-list/']),
+        'CBSN_BILLING_RECORD_DETAIL_ROOT': '/'.join([CBSN_API_BASE, 'billing-records/']),
     }
 
     if name == '-a':
