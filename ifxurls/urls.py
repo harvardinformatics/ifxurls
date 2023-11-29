@@ -15,8 +15,8 @@ import sys
 
 NANITES_API_BASE = os.environ.get('NANITES_API_BASE', 'https://nanites.rc.fas.harvard.edu/nanites/api').rstrip('/')
 IFXMAIL_API_BASE = os.environ.get('IFXMAIL_API_BASE', 'https://ifxmail.rc.fas.harvard.edu/ifxmail/api').rstrip('/')
-CNS_WORDPRESS_API_BASE = os.environ.get('CNS_WORDPRESS_API_BASE', 'https://cns1.rc.fas.harvard.edu/wp-json').rstrip('/')
-CNS_INTRANET_API_BASE = os.environ.get('CNS_INTRANET_API_BASE', 'https://cns1.rc.fas.harvard.edu').rstrip('/')
+CNS_WORDPRESS_API_BASE = os.environ.get('CNS_WORDPRESS_API_BASE', 'https://cns1.fas.cloud.huit.harvard.edu/wp-json').rstrip('/')
+CNS_INTRANET_API_BASE = os.environ.get('CNS_INTRANET_API_BASE', 'https://cns1.fas.cloud.huit.harvard.edu').rstrip('/')
 NICE_API_BASE = os.environ.get('NICE_API_BASE', 'https://nice.rc.fas.harvard.edu/nice/api').rstrip('/')
 NICE_URL_BASE = os.environ.get('NICE_URL_BASE', 'https://nice.rc.fas.harvard.edu/nice').rstrip('/')
 PUBS_API_BASE = os.environ.get('PUBS_API_BASE', 'https://ifx.rc.fas.harvard.edu/pubs/api').rstrip('/')
@@ -104,8 +104,8 @@ def getIfxUrl(name):
         return '\n'.join(lines)
     try:
         return urls[name]
-    except KeyError:
-        raise Exception('URL %s is not known.' % name)
+    except KeyError as e:
+        raise Exception(f'URL {name} is not known.') from e
 
 
 def main():
@@ -135,7 +135,7 @@ def main():
         print(getIfxUrl(sys.argv[1]))
         return 0
     except Exception:
-        sys.stderr.write('Unable to find URL name %s' % sys.argv[1])
+        sys.stderr.write(f'Unable to find URL name {sys.argv[1]}')
         return 1
 
 
