@@ -69,6 +69,8 @@ def getIfxUrl(name):
         'IFXONBOARD_POST_ONBOARD_REQUEST': '/'.join([IFXONBOARD_API_BASE, 'onboardrequests/']),
         'NICE_ACCOUNT_REQUEST_LISTING': '/'.join([NICE_URL_BASE, 'requests', 'account/']),
         'NICE_CONTACTS': '/'.join([NICE_API_BASE, 'contacts/']),
+        'NICE_BILLING_RECORD_LISTING': '/'.join([NICE_API_BASE, 'billing/get-billing-record-list/']),
+        'NICE_BILLING_RECORD_DETAIL_ROOT': '/'.join([NICE_API_BASE, 'billing-records/']),
         'P3_PASSWORD_RESET': '/'.join([P3_URL_BASE, 'pwreset/']),
         'PORTAL_APPROVALS': '/'.join([PORTAL_URL_BASE, 'request', 'approvals']),
         'PORTAL_REQUEST': '/'.join([PORTAL_URL_BASE, 'request', 'getrequest']),
