@@ -71,6 +71,7 @@ def getIfxUrl(name):
         'NICE_CONTACTS': '/'.join([NICE_API_BASE, 'contacts/']),
         'NICE_BILLING_RECORD_LISTING': '/'.join([NICE_API_BASE, 'billing/get-billing-record-list/']),
         'NICE_BILLING_RECORD_DETAIL_ROOT': '/'.join([NICE_API_BASE, 'billing-records/']),
+        'NICE_CONTACT_IMAGE': '/'.join([NICE_API_BASE, 'get-contact-image-path/']),
         'P3_PASSWORD_RESET': '/'.join([P3_URL_BASE, 'pwreset/']),
         'PORTAL_APPROVALS': '/'.join([PORTAL_URL_BASE, 'request', 'approvals']),
         'PORTAL_REQUEST': '/'.join([PORTAL_URL_BASE, 'request', 'getrequest']),
