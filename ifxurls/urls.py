@@ -35,6 +35,8 @@ COLDFRONT_API_BASE = os.environ.get('COLDFRONT_API_BASE', 'https://coldfront.rc.
 COLDFRONT_URL_BASE = os.environ.get('COLDFRONT_URL_BASE', 'https://coldfront.rc.fas.harvard.edu').rstrip('/')
 CBSN_API_BASE = os.environ.get('CBSN_API_BASE', 'https://cbsn.rc.fas.harvard.edu/cbsn/api').rstrip('/')
 CBSN_URL_BASE = os.environ.get('CBSN_URL_BASE', 'https://cbsn.rc.fas.harvard.edu/cbsn').rstrip('/')
+BOAR_API_BASE = os.environ.get('BOAR_API_BASE', 'https://boar.rc.fas.harvard.edu/boar/api').rstrip('/')
+BOAR_URL_BASE = os.environ.get('BOAR_URL_BASE', 'https://boar.rc.fas.harvard.edu/boar').rstrip('/')
 
 def getIfxUrl(name):
     '''
@@ -97,6 +99,12 @@ def getIfxUrl(name):
         'CBSN_ACCOUNT_REQUEST_UPDATE': '/'.join([CBSN_API_BASE, 'requests', 'account-request/']),
         'CBSN_BILLING_RECORD_LISTING': '/'.join([CBSN_API_BASE, 'billing/get-billing-record-list/']),
         'CBSN_BILLING_RECORD_DETAIL_ROOT': '/'.join([CBSN_API_BASE, 'billing-records/']),
+        'BOAR_API_BASE': BOAR_API_BASE,
+        'BOAR_URL_BASE': BOAR_URL_BASE,
+        'BOAR_ACCOUNT_REQUEST_LISTING': '/'.join([BOAR_URL_BASE, 'requests', 'account_request/']),
+        'BOAR_ACCOUNT_REQUEST_UPDATE': '/'.join([BOAR_API_BASE, 'requests', 'account-request/']),
+        'BOAR_BILLING_RECORD_LISTING': '/'.join([BOAR_API_BASE, 'billing/get-billing-record-list/']),
+        'BOAR_BILLING_RECORD_DETAIL_ROOT': '/'.join([BOAR_API_BASE, 'billing-records/']),
     }
 
     if name == '-a':
