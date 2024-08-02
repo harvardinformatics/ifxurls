@@ -35,8 +35,8 @@ COLDFRONT_API_BASE = os.environ.get('COLDFRONT_API_BASE', 'https://coldfront.rc.
 COLDFRONT_URL_BASE = os.environ.get('COLDFRONT_URL_BASE', 'https://coldfront.rc.fas.harvard.edu').rstrip('/')
 CBSN_API_BASE = os.environ.get('CBSN_API_BASE', 'https://cbsn.rc.fas.harvard.edu/cbsn/api').rstrip('/')
 CBSN_URL_BASE = os.environ.get('CBSN_URL_BASE', 'https://cbsn.rc.fas.harvard.edu/cbsn').rstrip('/')
-BOAR_API_BASE = os.environ.get('BOAR_API_BASE', 'https://boar.rc.fas.harvard.edu/boar/api').rstrip('/')
-BOAR_URL_BASE = os.environ.get('BOAR_URL_BASE', 'https://boar.rc.fas.harvard.edu/boar').rstrip('/')
+BOAR_API_BASE = os.environ.get('BOAR_API_BASE', 'https://ifx.fas.harvard.edu/boar/api').rstrip('/')
+BOAR_URL_BASE = os.environ.get('BOAR_URL_BASE', 'https://ifx.fas.harvard.edu/boar').rstrip('/')
 
 def getIfxUrl(name):
     '''
