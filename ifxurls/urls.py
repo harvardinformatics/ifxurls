@@ -70,6 +70,7 @@ def getIfxUrl(name):
         'IFXONBOARD_URL_BASE': IFXONBOARD_URL_BASE,
         'IFXONBOARD_POST_ONBOARD_REQUEST': '/'.join([IFXONBOARD_API_BASE, 'onboardrequests/']),
         'NICE_ACCOUNT_REQUEST_LISTING': '/'.join([NICE_URL_BASE, 'requests', 'account/']),
+        'NICE_ACCOUNT_REQUEST_PI_APPROVAL_LISTING': '/'.join([NICE_URL_BASE, 'requests/account_request_approval/list/']),
         'NICE_CONTACTS': '/'.join([NICE_API_BASE, 'contacts/']),
         'NICE_BILLING_RECORD_LISTING': '/'.join([NICE_API_BASE, 'billing/get-billing-record-list/']),
         'NICE_BILLING_RECORD_DETAIL_ROOT': '/'.join([NICE_API_BASE, 'billing-records/']),
