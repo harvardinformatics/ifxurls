@@ -37,6 +37,8 @@ CBSN_API_BASE = os.environ.get('CBSN_API_BASE', 'https://cbsn.rc.fas.harvard.edu
 CBSN_URL_BASE = os.environ.get('CBSN_URL_BASE', 'https://cbsn.rc.fas.harvard.edu/cbsn').rstrip('/')
 BOAR_API_BASE = os.environ.get('BOAR_API_BASE', 'https://ifx.fas.harvard.edu/boar/api').rstrip('/')
 BOAR_URL_BASE = os.environ.get('BOAR_URL_BASE', 'https://ifx.fas.harvard.edu/boar').rstrip('/')
+BAUERCAT_API_BASE = os.environ.get('BAUERCAT_API_BASE', 'https://bauercat.fas.harvard.edu/bauercat/api').rstrip('/')
+BAUERCAT_URL_BASE = os.environ.get('BAUERCAT_URL_BASE', 'https://bauercat.fas.harvard.edu/bauercat').rstrip('/')
 
 def getIfxUrl(name):
     '''
@@ -111,6 +113,13 @@ def getIfxUrl(name):
         'BOAR_BILLING_RECORD_LISTING': '/'.join([BOAR_API_BASE, 'billing/get-billing-record-list/']),
         'BOAR_BILLING_RECORD_DETAIL_ROOT': '/'.join([BOAR_API_BASE, 'billing-records/']),
         'BOAR_GET_ORGS_WITH_BILLING': '/'.join([BOAR_API_BASE, 'billing/get-orgs-with-billing/']),
+        'BAUERCAT_API_BASE': BAUERCAT_API_BASE,
+        'BAUERCAT_URL_BASE': BAUERCAT_URL_BASE,
+        'BAUERCAT_ACCOUNT_REQUEST_LISTING': '/'.join([BAUERCAT_URL_BASE, 'requests', 'account_request/']),
+        'BAUERCAT_ACCOUNT_REQUEST_UPDATE': '/'.join([BAUERCAT_API_BASE, 'requests', 'account-request/']),
+        'BAUERCAT_BILLING_RECORD_LISTING': '/'.join([BAUERCAT_API_BASE, 'billing/get-billing-record-list/']),
+        'BAUERCAT_BILLING_RECORD_DETAIL_ROOT': '/'.join([BAUERCAT_API_BASE, 'billing-records/']),
+        'BAUERCAT_GET_ORGS_WITH_BILLING': '/'.join([BAUERCAT_API_BASE, 'billing/get-orgs-with-billing/']),
     }
 
     if name == '-a':
