@@ -95,6 +95,8 @@ def getIfxUrl(name):
         'FIINE_API_BASE': FIINE_API_BASE,
         'FIINE_ACCOUNT_REQUEST_LISTING': '/'.join([FIINE_URL_BASE, 'requests', 'account_request/']),
         'FIINE_ACCOUNT_REQUEST_UPDATE': '/'.join([FIINE_API_BASE, 'requests', 'account-request/']),
+        'FIINE_ACCOUNT_LISTING': '/'.join([FIINE_API_BASE, 'accounts/']),
+        'FIINE_PERSON_DETAIL': '/'.join([FIINE_API_BASE, 'people/']),
         'COLDFRONT_API_BASE': COLDFRONT_API_BASE,
         'COLDFRONT_BILLING_RECORD_LISTING': '/'.join([COLDFRONT_API_BASE, 'billing/get-billing-record-list/']),
         'COLDFRONT_BILLING_RECORD_DETAIL_ROOT': '/'.join([COLDFRONT_API_BASE, 'billing-records/']),
