@@ -39,6 +39,8 @@ BOAR_API_BASE = os.environ.get('BOAR_API_BASE', 'https://ifx.fas.harvard.edu/boa
 BOAR_URL_BASE = os.environ.get('BOAR_URL_BASE', 'https://ifx.fas.harvard.edu/boar').rstrip('/')
 BAUERCAT_API_BASE = os.environ.get('BAUERCAT_API_BASE', 'https://bauercat.fas.harvard.edu/bauercat/api').rstrip('/')
 BAUERCAT_URL_BASE = os.environ.get('BAUERCAT_URL_BASE', 'https://bauercat.fas.harvard.edu/bauercat').rstrip('/')
+LOCKBOX_API_BASE = os.environ.get('LOCKBOX_API_BASE', 'https://harb--test.sandbox.my.salesforce.com/services').rstrip('/')
+LOCKBOX_DATA_API_BASE = '/'.join([LOCKBOX_API_BASE, 'data/v61.0/'])
 
 def getIfxUrl(name):
     '''
@@ -122,6 +124,11 @@ def getIfxUrl(name):
         'BAUERCAT_BILLING_RECORD_LISTING': '/'.join([BAUERCAT_API_BASE, 'billing/get-billing-record-list/']),
         'BAUERCAT_BILLING_RECORD_DETAIL_ROOT': '/'.join([BAUERCAT_API_BASE, 'billing-records/']),
         'BAUERCAT_GET_ORGS_WITH_BILLING': '/'.join([BAUERCAT_API_BASE, 'billing/get-orgs-with-billing/']),
+        'LOCKBOX_API_BASE': LOCKBOX_API_BASE,
+        'LOCKBOX_DATA_API_BASE': LOCKBOX_DATA_API_BASE,
+        'LOCKBOX_QUERY': '/'.join([LOCKBOX_DATA_API_BASE, 'query/']),
+        'LOCKBOX_SOBJECTS': '/'.join([LOCKBOX_DATA_API_BASE, 'sobjects/']),
+        'LOCKBOX_TOKEN_URL': '/'.join([LOCKBOX_API_BASE, 'oauth2/token']),
     }
 
     if name == '-a':
