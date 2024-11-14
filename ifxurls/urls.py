@@ -76,6 +76,8 @@ def getIfxUrl(name):
         'NICE_BILLING_RECORD_DETAIL_ROOT': '/'.join([NICE_API_BASE, 'billing-records/']),
         'NICE_GET_ORGS_WITH_BILLING': '/'.join([NICE_API_BASE, 'billing/get-orgs-with-billing/']),
         'NICE_CONTACT_IMAGE': '/'.join([NICE_API_BASE, 'get-contact-image-path/']),
+        'NICE_GET_PENDING_YEAR_MONTH': '/'.join([NICE_API_BASE, 'billing/get-pending-year-month/']),
+        'NICE_REBALANCE': '/'.join([NICE_API_BASE, 'billing/rebalance/']),
         'P3_PASSWORD_RESET': '/'.join([P3_URL_BASE, 'pwreset/']),
         'PORTAL_APPROVALS': '/'.join([PORTAL_URL_BASE, 'request', 'approvals']),
         'PORTAL_REQUEST': '/'.join([PORTAL_URL_BASE, 'request', 'getrequest']),
@@ -90,6 +92,8 @@ def getIfxUrl(name):
         'HERS_BILLING_RECORD_DETAIL_ROOT': '/'.join([HERS_API_BASE, 'billing-records/']),
         'HERS_ACCOUNT_REQUEST_UPDATE': '/'.join([HERS_API_BASE, 'requests', 'account-request/']),
         'HERS_GET_ORGS_WITH_BILLING': '/'.join([HERS_API_BASE, 'billing/get-orgs-with-billing/']),
+        'HERS_GET_PENDING_YEAR_MONTH': '/'.join([HERS_API_BASE, 'billing/get-pending-year-month/']),
+        'HERS_REBALANCE': '/'.join([HERS_API_BASE, 'billing/rebalance/']),
         'FIINE_API_BASE': FIINE_API_BASE,
         'FIINE_ACCOUNT_REQUEST_LISTING': '/'.join([FIINE_URL_BASE, 'requests', 'account_request/']),
         'FIINE_ACCOUNT_REQUEST_UPDATE': '/'.join([FIINE_API_BASE, 'requests', 'account-request/']),
@@ -97,6 +101,7 @@ def getIfxUrl(name):
         'COLDFRONT_BILLING_RECORD_LISTING': '/'.join([COLDFRONT_API_BASE, 'billing/get-billing-record-list/']),
         'COLDFRONT_BILLING_RECORD_DETAIL_ROOT': '/'.join([COLDFRONT_API_BASE, 'billing-records/']),
         'COLDFRONT_GET_ORGS_WITH_BILLING': '/'.join([COLDFRONT_API_BASE, 'billing/get-orgs-with-billing/']),
+        'COLDFRONT_GET_PENDING_YEAR_MONTH': '/'.join([COLDFRONT_API_BASE, 'billing/get-pending-year-month/']),
         'CBSN_API_BASE': CBSN_API_BASE,
         'CBSN_URL_BASE': CBSN_URL_BASE,
         'CBSN_ACCOUNT_REQUEST_LISTING': '/'.join([CBSN_URL_BASE, 'requests', 'account_request/']),
@@ -104,6 +109,8 @@ def getIfxUrl(name):
         'CBSN_BILLING_RECORD_LISTING': '/'.join([CBSN_API_BASE, 'billing/get-billing-record-list/']),
         'CBSN_BILLING_RECORD_DETAIL_ROOT': '/'.join([CBSN_API_BASE, 'billing-records/']),
         'CBSN_GET_ORGS_WITH_BILLING': '/'.join([CBSN_API_BASE, 'billing/get-orgs-with-billing/']),
+        'CBSN_GET_PENDING_YEAR_MONTH': '/'.join([CBSN_API_BASE, 'billing/get-pending-year-month/']),
+        'CBSN_REBALANCE': '/'.join([CBSN_API_BASE, 'billing/rebalance/']),
         'BOAR_API_BASE': BOAR_API_BASE,
         'BOAR_URL_BASE': BOAR_URL_BASE,
         'BOAR_ACCOUNT_REQUEST_LISTING': '/'.join([BOAR_URL_BASE, 'requests', 'account_request/']),
@@ -111,6 +118,8 @@ def getIfxUrl(name):
         'BOAR_BILLING_RECORD_LISTING': '/'.join([BOAR_API_BASE, 'billing/get-billing-record-list/']),
         'BOAR_BILLING_RECORD_DETAIL_ROOT': '/'.join([BOAR_API_BASE, 'billing-records/']),
         'BOAR_GET_ORGS_WITH_BILLING': '/'.join([BOAR_API_BASE, 'billing/get-orgs-with-billing/']),
+        'BOAR_GET_PENDING_YEAR_MONTH': '/'.join([BOAR_API_BASE, 'billing/get-pending-year-month/']),
+        'BOAR_REBALANCE': '/'.join([BOAR_API_BASE, 'billing/rebalance/']),
     }
 
     if name == '-a':
