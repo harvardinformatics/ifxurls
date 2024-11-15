@@ -37,6 +37,10 @@ CBSN_API_BASE = os.environ.get('CBSN_API_BASE', 'https://cbsn.rc.fas.harvard.edu
 CBSN_URL_BASE = os.environ.get('CBSN_URL_BASE', 'https://cbsn.rc.fas.harvard.edu/cbsn').rstrip('/')
 BOAR_API_BASE = os.environ.get('BOAR_API_BASE', 'https://ifx.fas.harvard.edu/boar/api').rstrip('/')
 BOAR_URL_BASE = os.environ.get('BOAR_URL_BASE', 'https://ifx.fas.harvard.edu/boar').rstrip('/')
+BAUERCAT_API_BASE = os.environ.get('BAUERCAT_API_BASE', 'https://bauercat.fas.harvard.edu/bauercat/api').rstrip('/')
+BAUERCAT_URL_BASE = os.environ.get('BAUERCAT_URL_BASE', 'https://bauercat.fas.harvard.edu/bauercat').rstrip('/')
+LOCKBOX_API_BASE = os.environ.get('LOCKBOX_API_BASE', 'https://harb--test.sandbox.my.salesforce.com/services').rstrip('/')
+LOCKBOX_DATA_API_BASE = '/'.join([LOCKBOX_API_BASE, 'data/v61.0/'])
 
 def getIfxUrl(name):
     '''
@@ -69,12 +73,16 @@ def getIfxUrl(name):
         'IFXONBOARD_API_BASE': IFXONBOARD_API_BASE,
         'IFXONBOARD_URL_BASE': IFXONBOARD_URL_BASE,
         'IFXONBOARD_POST_ONBOARD_REQUEST': '/'.join([IFXONBOARD_API_BASE, 'onboardrequests/']),
-        'NICE_ACCOUNT_REQUEST_LISTING': '/'.join([NICE_URL_BASE, 'requests', 'account/']),
+        'NICE_ACCOUNT_REQUEST_LISTING': '/'.join([NICE_URL_BASE, 'requests', 'account_request/']), # Not actually the list page, but this is used for getting individual requests
+        'NICE_ACCOUNT_REQUEST_PI_APPROVAL_LISTING': '/'.join([NICE_URL_BASE, 'requests/account_request_approval/list/']),
         'NICE_CONTACTS': '/'.join([NICE_API_BASE, 'contacts/']),
         'NICE_BILLING_RECORD_LISTING': '/'.join([NICE_API_BASE, 'billing/get-billing-record-list/']),
         'NICE_BILLING_RECORD_DETAIL_ROOT': '/'.join([NICE_API_BASE, 'billing-records/']),
+        'NICE_GET_ORGS_WITH_BILLING': '/'.join([NICE_API_BASE, 'billing/get-orgs-with-billing/']),
         'NICE_CONTACT_IMAGE': '/'.join([NICE_API_BASE, 'get-contact-image-path/']),
         'NICE_CALCULATE_BILLING_MONTH': '/'.join([NICE_API_BASE, 'billing/calculate-billing-month/']),
+        'NICE_GET_PENDING_YEAR_MONTH': '/'.join([NICE_API_BASE, 'billing/get-pending-year-month/']),
+        'NICE_REBALANCE': '/'.join([NICE_API_BASE, 'billing/rebalance/']),
         'P3_PASSWORD_RESET': '/'.join([P3_URL_BASE, 'pwreset/']),
         'PORTAL_APPROVALS': '/'.join([PORTAL_URL_BASE, 'request', 'approvals']),
         'PORTAL_REQUEST': '/'.join([PORTAL_URL_BASE, 'request', 'getrequest']),
@@ -89,13 +97,20 @@ def getIfxUrl(name):
         'HERS_BILLING_RECORD_DETAIL_ROOT': '/'.join([HERS_API_BASE, 'billing-records/']),
         'HERS_ACCOUNT_REQUEST_UPDATE': '/'.join([HERS_API_BASE, 'requests', 'account-request/']),
         'HERS_CALCULATE_BILLING_MONTH': '/'.join([HERS_API_BASE, 'billing/calculate-billing-month/']),
+        'HERS_GET_ORGS_WITH_BILLING': '/'.join([HERS_API_BASE, 'billing/get-orgs-with-billing/']),
+        'HERS_GET_PENDING_YEAR_MONTH': '/'.join([HERS_API_BASE, 'billing/get-pending-year-month/']),
+        'HERS_REBALANCE': '/'.join([HERS_API_BASE, 'billing/rebalance/']),
         'FIINE_API_BASE': FIINE_API_BASE,
         'FIINE_ACCOUNT_REQUEST_LISTING': '/'.join([FIINE_URL_BASE, 'requests', 'account_request/']),
         'FIINE_ACCOUNT_REQUEST_UPDATE': '/'.join([FIINE_API_BASE, 'requests', 'account-request/']),
+        'FIINE_ACCOUNT_LISTING': '/'.join([FIINE_API_BASE, 'accounts/']),
+        'FIINE_PERSON_DETAIL': '/'.join([FIINE_API_BASE, 'people/']),
         'COLDFRONT_API_BASE': COLDFRONT_API_BASE,
         'COLDFRONT_BILLING_RECORD_LISTING': '/'.join([COLDFRONT_API_BASE, 'billing/get-billing-record-list/']),
         'COLDFRONT_BILLING_RECORD_DETAIL_ROOT': '/'.join([COLDFRONT_API_BASE, 'billing-records/']),
         'COLDFRONT_CALCULATE_BILLING_MONTH': '/'.join([COLDFRONT_API_BASE, 'billing/calculate-billing-month/']),
+        'COLDFRONT_GET_ORGS_WITH_BILLING': '/'.join([COLDFRONT_API_BASE, 'billing/get-orgs-with-billing/']),
+        'COLDFRONT_GET_PENDING_YEAR_MONTH': '/'.join([COLDFRONT_API_BASE, 'billing/get-pending-year-month/']),
         'CBSN_API_BASE': CBSN_API_BASE,
         'CBSN_URL_BASE': CBSN_URL_BASE,
         'CBSN_ACCOUNT_REQUEST_LISTING': '/'.join([CBSN_URL_BASE, 'requests', 'account_request/']),
@@ -103,6 +118,9 @@ def getIfxUrl(name):
         'CBSN_BILLING_RECORD_LISTING': '/'.join([CBSN_API_BASE, 'billing/get-billing-record-list/']),
         'CBSN_BILLING_RECORD_DETAIL_ROOT': '/'.join([CBSN_API_BASE, 'billing-records/']),
         'CBSN_CALCULATE_BILLING_MONTH': '/'.join([CBSN_API_BASE, 'billing/calculate-billing-month/']),
+        'CBSN_GET_ORGS_WITH_BILLING': '/'.join([CBSN_API_BASE, 'billing/get-orgs-with-billing/']),
+        'CBSN_GET_PENDING_YEAR_MONTH': '/'.join([CBSN_API_BASE, 'billing/get-pending-year-month/']),
+        'CBSN_REBALANCE': '/'.join([CBSN_API_BASE, 'billing/rebalance/']),
         'BOAR_API_BASE': BOAR_API_BASE,
         'BOAR_URL_BASE': BOAR_URL_BASE,
         'BOAR_ACCOUNT_REQUEST_LISTING': '/'.join([BOAR_URL_BASE, 'requests', 'account_request/']),
@@ -110,6 +128,21 @@ def getIfxUrl(name):
         'BOAR_BILLING_RECORD_LISTING': '/'.join([BOAR_API_BASE, 'billing/get-billing-record-list/']),
         'BOAR_BILLING_RECORD_DETAIL_ROOT': '/'.join([BOAR_API_BASE, 'billing-records/']),
         'BOAR_CALCULATE_BILLING_MONTH': '/'.join([BOAR_API_BASE, 'billing/calculate-billing-month/']),
+        'BOAR_GET_ORGS_WITH_BILLING': '/'.join([BOAR_API_BASE, 'billing/get-orgs-with-billing/']),
+        'BOAR_GET_PENDING_YEAR_MONTH': '/'.join([BOAR_API_BASE, 'billing/get-pending-year-month/']),
+        'BOAR_REBALANCE': '/'.join([BOAR_API_BASE, 'billing/rebalance/']),
+        'BAUERCAT_API_BASE': BAUERCAT_API_BASE,
+        'BAUERCAT_URL_BASE': BAUERCAT_URL_BASE,
+        'BAUERCAT_ACCOUNT_REQUEST_LISTING': '/'.join([BAUERCAT_URL_BASE, 'requests', 'account_request/']),
+        'BAUERCAT_ACCOUNT_REQUEST_UPDATE': '/'.join([BAUERCAT_API_BASE, 'requests', 'account-request/']),
+        'BAUERCAT_BILLING_RECORD_LISTING': '/'.join([BAUERCAT_API_BASE, 'billing/get-billing-record-list/']),
+        'BAUERCAT_BILLING_RECORD_DETAIL_ROOT': '/'.join([BAUERCAT_API_BASE, 'billing-records/']),
+        'BAUERCAT_GET_ORGS_WITH_BILLING': '/'.join([BAUERCAT_API_BASE, 'billing/get-orgs-with-billing/']),
+        'LOCKBOX_API_BASE': LOCKBOX_API_BASE,
+        'LOCKBOX_DATA_API_BASE': LOCKBOX_DATA_API_BASE,
+        'LOCKBOX_QUERY': '/'.join([LOCKBOX_DATA_API_BASE, 'query/']),
+        'LOCKBOX_SOBJECTS': '/'.join([LOCKBOX_DATA_API_BASE, 'sobjects/']),
+        'LOCKBOX_TOKEN_URL': '/'.join([LOCKBOX_API_BASE, 'oauth2/token']),
     }
 
     if name == '-a':
