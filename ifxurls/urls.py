@@ -114,7 +114,7 @@ def getIfxUrl(name):
         'COLDFRONT_API_BASE': COLDFRONT_API_BASE,
         'COLDFRONT_BILLING_RECORD_LISTING': '/'.join([COLDFRONT_API_BASE, 'billing/get-billing-record-list/']),
         'COLDFRONT_BILLING_RECORD_DETAIL_ROOT': '/'.join([COLDFRONT_API_BASE, 'billing-records/']),
-        'COLDFRONT_CALCULATE_BILLING_MONTH': '/'.join([COLDFRONT_API_BASE, 'billing/calculate-billing-month/']),
+        'COLDFRONT_CALCULATE_BILLING_MONTH': '/'.join([COLDFRONT_API_BASE, 'calculate-billing-month/']),
         'COLDFRONT_GET_ORGS_WITH_BILLING': '/'.join([COLDFRONT_API_BASE, 'billing/get-orgs-with-billing/']),
         'COLDFRONT_GET_PENDING_YEAR_MONTH': '/'.join([COLDFRONT_API_BASE, 'billing/get-pending-year-month/']),
         'COLDFRONT_REBALANCE': '/'.join([COLDFRONT_API_BASE, 'billing/rebalance/']),
