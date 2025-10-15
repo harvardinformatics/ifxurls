@@ -77,6 +77,7 @@ def getIfxUrl(name):
         'NICE_ACCOUNT_REQUEST_PI_APPROVAL_LISTING': '/'.join([NICE_URL_BASE, 'requests/account_request_approval/list/']),
         'NICE_PROJECT_REQUEST_DETAIL_ROOT': '/'.join([NICE_URL_BASE, 'requests/project_request/']),
         'NICE_PROJECT_LISTING': '/'.join([NICE_URL_BASE, 'projects/']),
+        'NICE_ACCOUNT_REQUEST_PROJECT_APPROVAL_LISTING': '/'.join([NICE_URL_BASE, 'requests/project_request/list/']),
         'NICE_CONTACTS': '/'.join([NICE_API_BASE, 'contacts/']),
         'NICE_BILLING_RECORD_LISTING': '/'.join([NICE_API_BASE, 'billing/get-billing-record-list/']),
         'NICE_BILLING_RECORD_DETAIL_ROOT': '/'.join([NICE_API_BASE, 'billing-records/']),
