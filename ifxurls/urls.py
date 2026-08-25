@@ -117,6 +117,7 @@ def getIfxUrl(name):
         'HERS_SUMMARY_BY_USER': '/'.join([HERS_API_BASE, 'billing/get-summary-by-user/']),
         'HERS_FINALIZE_BILLING_MONTH': '/'.join([HERS_API_BASE, 'billing/finalize-billing-month/']),
         'FIINE_API_BASE': FIINE_API_BASE,
+        'FIINE_URL_BASE': FIINE_URL_BASE,
         'FIINE_ACCOUNT_REQUEST_LISTING': '/'.join([FIINE_URL_BASE, 'requests', 'account_request/']),
         'FIINE_ACCOUNT_REQUEST_UPDATE': '/'.join([FIINE_API_BASE, 'requests', 'account-request/']),
         'FIINE_ACCOUNT_LISTING': '/'.join([FIINE_API_BASE, 'accounts/']),
