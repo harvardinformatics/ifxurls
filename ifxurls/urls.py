@@ -180,6 +180,7 @@ def getIfxUrl(name):
         'BAUERCAT_SUMMARY_BY_PRODUCT_RATE': '/'.join([BAUERCAT_API_BASE, 'billing/get-summary-by-product-rate/']),
         'BAUERCAT_SUMMARY_BY_USER': '/'.join([BAUERCAT_API_BASE, 'billing/get-summary-by-user/']),
         'BAUERCAT_FINALIZE_BILLING_MONTH': '/'.join([BAUERCAT_API_BASE, 'billing/finalize-billing-month/']),
+        'BAUERCAT_CALCULATE_BILLING_MONTH': '/'.join([BAUERCAT_API_BASE, 'billing/calculate-billing-month/']),
         'LOCKBOX_API_BASE': LOCKBOX_API_BASE,
         'LOCKBOX_DATA_API_BASE': LOCKBOX_DATA_API_BASE,
         'LOCKBOX_QUERY': '/'.join([LOCKBOX_DATA_API_BASE, 'query/']),
