@@ -96,6 +96,7 @@ def getIfxUrl(name):
         'NICE_FINALIZE_BILLING_MONTH': '/'.join([NICE_API_BASE, 'billing/finalize-billing-month/']),
         'P3_PASSWORD_RESET': '/'.join([P3_URL_BASE, 'pwreset/']),
         'PORTAL_APPROVALS': '/'.join([PORTAL_URL_BASE, 'request', 'approvals']),
+        'PORTAL_RECENT_APPROVALS': '/'.join([PORTAL_URL_BASE, 'request', 'recent-approvals']),
         'PORTAL_REQUEST': '/'.join([PORTAL_URL_BASE, 'request', 'getrequest']),
         'P3_API_BASE': P3_API_BASE,
         'P3_ACCOUNT_REQUEST_LISTING': '/'.join([P3_URL_BASE, 'requests', 'account/']),
