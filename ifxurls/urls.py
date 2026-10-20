@@ -70,6 +70,7 @@ def getIfxUrl(name):
         'CNS_INTRANET_SUBMIT_TRAINING': '/'.join([CNS_INTRANET_API_BASE, 'apps/nice/training.php']),
         'CNS_INTRANET_RUN_SWEEPS': '/'.join([CNS_INTRANET_API_BASE, 'apps/nice/sweeps.php']),
         'CNS_INTRANET_GET_TRAINING': '/'.join([CNS_INTRANET_API_BASE, 'apps/nice/get_training_for_user.php']),
+        'CNS_INTRANET_GET_USER_DATA': '/'.join([CNS_INTRANET_API_BASE, 'apps/nice/get_user_data.php']),
         'NANITES_API_BASE':  NANITES_API_BASE,
         'NICE_API_BASE': NICE_API_BASE,
         'NICE_URL_BASE': NICE_URL_BASE,
