@@ -58,6 +58,7 @@ def getIfxUrl(name):
         'NANITES_BASICS_BY_LOGIN': '/'.join([NANITES_API_BASE, 'get-basics-by-login/']),
         'NANITES_ORG_NAMES': '/'.join([NANITES_API_BASE, 'get-org-names/']),
         'NANITES_PI_NAMES': '/'.join([NANITES_API_BASE, 'get-pi-names/']),
+        'NANITES_UPDATE_DEMO_DATA': '/'.join([NANITES_API_BASE, 'update-demo-data/']),
         'CNS_WORDPRESS_TOOL_LISTING': '/'.join([CNS_WORDPRESS_API_BASE, 'wp/v2/tool/']),
         'CNS_WORDPRESS_MEDIA_LISTING': '/'.join([CNS_WORDPRESS_API_BASE, 'wp/v2/media/']),
         'CNS_WORDPRESS_STAFF_LISTING': '/'.join([CNS_WORDPRESS_API_BASE, 'wp/v2/staff/']),
