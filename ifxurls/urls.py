@@ -125,6 +125,7 @@ def getIfxUrl(name):
         'FIINE_URL_BASE': FIINE_URL_BASE,
         'FIINE_ACCOUNT_REQUEST_LISTING': '/'.join([FIINE_URL_BASE, 'requests', 'account_request/']),
         'FIINE_ACCOUNT_REQUEST_UPDATE': '/'.join([FIINE_API_BASE, 'requests', 'account-request/']),
+        'FIINE_AUTHORIZE': '/'.join([FIINE_API_BASE, 'authorize/']),
         'FIINE_ACCOUNT_LISTING': '/'.join([FIINE_API_BASE, 'accounts/']),
         'FIINE_PERSON_DETAIL': '/'.join([FIINE_API_BASE, 'people/']),
         'FIINE_MIGRATE_PRODUCT': '/'.join([FIINE_API_BASE, 'migrate-product/']),
